@@ -6,7 +6,7 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-
+/*
 pipelineJob('theme-park-job') {
     definition {
         cpsScm {
@@ -14,6 +14,7 @@ pipelineJob('theme-park-job') {
                 git {
                     remote {
                         url 'https://github.com/MaksatRysbekov/devopslearnproject.git'
+                        github('account/repo', 'ssh')
                         credentials('github-ci-key')
                     }
                     branch 'master'
@@ -22,3 +23,4 @@ pipelineJob('theme-park-job') {
         }
     }
 }
+*/
