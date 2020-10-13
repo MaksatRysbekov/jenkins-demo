@@ -14,6 +14,7 @@ pipelineJob('theme-park-job') {
                 git {
                     remote {
                         url 'https://github.com/MaksatRysbekov/devopslearnproject.git'
+                        credentials('github-ci-key')
                     }
                     branch 'master'
                 }
